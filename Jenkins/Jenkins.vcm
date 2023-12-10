@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="34">
+  <config>
+    <config>
+      <key>VCAST_REPOSITORY</key>
+      <value>$(REPOSITORY_DIR)</value>
+    </config>
+    <search-directory type="TESTABLE_SOURCE_DIR">$(SRC_DIR1)</search-directory>
+    <base-directories>
+      <key>VCAST_SourceRoot</key>
+      <value>$(SRC_DIR1)</value>
+    </base-directories>
+    <saved-logs>5</saved-logs>
+    <build-directory-naming-strategy>COMPRESSED</build-directory-naming-strategy>
+  </config>
+  <project-id>1702157943</project-id>
+  <factor-config-options>0</factor-config-options>
+  <environment name="COMBO" type="UNIT">
+    <language>1</language>
+    <is-monitored>0</is-monitored>
+    <config>
+      <original-environment-directory>Jenkins/build/3009089734</original-environment-directory>
+    </config>
+  </environment>
+  <environment name="DATABASE" type="UNIT">
+    <language>1</language>
+    <is-monitored>0</is-monitored>
+    <config>
+      <original-environment-directory>Jenkins/build/4052317723</original-environment-directory>
+    </config>
+  </environment>
+  <environment name="MANAGER" type="UNIT">
+    <language>1</language>
+    <is-monitored>0</is-monitored>
+    <config>
+      <original-environment-directory>Jenkins/build/4170634299</original-environment-directory>
+    </config>
+  </environment>
+  <compiler>
+    <compiler>
+      <name>VectorCAST_MinGW_C</name>
+      <config>
+        <config>
+          <key>C_COMPILER_TAG</key>
+          <value>BUILTIN_MINGW_C</value>
+        </config>
+      </config>
+    </compiler>
+    <testsuite name="NoCover">
+      <environment name="COMBO"/>
+      <environment name="DATABASE"/>
+      <environment name="MANAGER"/>
+    </testsuite>
+    <testsuite name="S&amp;B">
+      <config>
+        <config>
+          <key>COVERAGE_TYPE</key>
+          <value>Statement+Branch</value>
+        </config>
+      </config>
+      <environment name="COMBO"/>
+      <environment name="DATABASE"/>
+      <environment name="MANAGER"/>
+    </testsuite>
+  </compiler>
+</project>
