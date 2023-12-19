@@ -51,7 +51,7 @@
       <environment name="DATABASE"/>
       <environment name="MANAGER"/>
     </testsuite>
-    <testsuite name="S&amp;B">
+    <testsuite name="S_B">
       <config>
         <config>
           <key>COVERAGE_TYPE</key>
